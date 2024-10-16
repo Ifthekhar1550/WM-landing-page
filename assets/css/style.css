@@ -63,3 +63,253 @@ li {
         padding: 20px 15px;
     }
 }
+
+.btn-1 {
+    border-radius: 50px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.btn-1:hover {
+    border: 2px solid #000;
+    background-color: #FFFFFF;
+    color: #000000;
+
+}
+
+.btn-2 {
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #000;
+}
+
+.btn-2:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.btn-3 {
+    border-radius: 50px;
+    background-color: #41FF9E;
+    color: #000000;
+}
+
+.btn-3:hover {
+    background-color: #C7FFD0;
+    color: #000000;
+}
+
+.btn-4 {
+    border-radius: 50px;
+    background-color: #C7FFD0;
+    color: #000000;
+}
+
+@media (max-width: 767px) {
+    .hire h3 {
+        font-size: 28px !important;
+    }
+
+    .hire p {
+        font-size: 14px;
+    }
+
+    .hire .btn {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+
+    .hire .btn-1,
+    .hire .btn-2 {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+
+    .hire .d-flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.office-images {
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.office-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .office-images {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .office-images {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.main {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(150px);
+}
+
+.stats-section {
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.stats-section .count {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.stats-section p {
+    font-size: 16px;
+    color: #595959;
+}
+
+@media (max-width: 767px) {
+    .stats-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .stats-section .count {
+        font-size: 36px;
+    }
+
+    .stats-section p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .stats-section {
+        justify-content: space-around;
+    }
+}
+
+.speech-section {
+    padding: 2rem 8rem;
+}
+
+.speech-section p {
+    color: #737373;
+    font-family: 'Urbanist' sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+}
+
+.speech-section span {
+    color: #000;
+    font-family: 'Urbanist' sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .speech-section {
+        padding: 1rem 2rem;
+    }
+
+    .speech-section p {
+        font-size: 24px;
+    }
+
+    .speech-section span {
+        font-size: 24px;
+    }
+}
+
+.speech-details .name {
+    color: #000;
+    text-align: center;
+    font-family: "Inter Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.speech-details .position {
+    color: #181732;
+    text-align: center;
+    font-family: "Inter Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@media (max-width: 767px) {
+    .speech-details .name {
+        font-size: 18px;
+    }
+
+    .speech-details .position {
+        font-size: 14px;
+    }
+}
+
+.brand-carousel {
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.scrolling-wrapper {
+    display: flex;
+    animation: scroll 12s linear infinite;
+}
+
+.scrolling-wrapper img {
+    width: auto;
+    /* Change to auto for better aspect ratio */
+    height: 80px;
+    /* Set a fixed height for smaller devices */
+    margin: 0 1rem;
+    /* Optional: add some horizontal margin for spacing */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@media (max-width: 991px) {
+
+    .scrolling-wrapper img {
+        height: 60px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .scrolling-wrapper {
+        animation: scroll 8s linear infinite;
+
+    }
+
+    .scrolling-wrapper img {
+        height: 50px;
+
+    }
+}
+
+.service {
+    background: #0C0A25;
+}
